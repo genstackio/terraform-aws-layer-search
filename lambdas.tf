@@ -1,6 +1,6 @@
 module "lambda-edge" {
   source            = "genstackio/lambda/aws"
-  version           = "0.1.13"
+  version           = "0.3.0"
   file              = data.archive_file.lambda-edge-code.output_path
   name              = "${var.env}-edge-${var.name}"
   runtime           = "nodejs14.x"
